@@ -1,0 +1,11 @@
+@import 'bootstrap/scss/functions.scss';
+@import './custom-bootstrap.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+
+a {
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}

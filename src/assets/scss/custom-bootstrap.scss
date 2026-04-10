@@ -1,0 +1,33 @@
+$primary: #2f5597;
+$secondary: #18a2b8;
+$danger: #FF0000;
+$warning: #ed7d31;
+$green: #71ad47;
+$contract_gray: #f2f2f2; // 停車場站資訊背景顏色
+$contract_yellow: #fff2cc; // 停車租用人資訊背景顏色
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": #198754,
+  "danger": $danger,
+  "warning": $warning,
+  "green": $green,
+  "contract_gray": $contract_gray,
+  "contract_yellow": $contract_yellow
+);
+
+$btn-font-color: #ffffff;
+
+.btn {
+  &.btn-primary,
+  &.btn-secondary,
+  &.btn-danger,
+  &.btn-warning,
+  &.btn-green {
+    color: $btn-font-color;
+    &:hover {
+      color: $btn-font-color;
+    }
+  }
+}
