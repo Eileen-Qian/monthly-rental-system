@@ -140,7 +140,35 @@ const router = createRouter({
         bQz0fX8f: "",
       },
     },
+
+    /* ── 月租抽籤 ── */
+    {
+      path: "/place/lottery",
+      name: "LotteryHome",
+      component: () => import("../views/lottery/LotteryHome.vue"),
+      meta: { title: "月租停車抽籤登記" },
+    },
+    {
+      path: "/place/lottery/register",
+      name: "LotteryRegister",
+      component: () => import("../views/lottery/LotteryRegister.vue"),
+      meta: { title: "月租停車抽籤登記" },
+    },
+    {
+      path: "/place/lottery/query",
+      name: "LotteryQuery",
+      component: () => import("../views/lottery/LotteryQuery.vue"),
+      meta: { title: "月租停車抽籤登記" },
+    },
   ],
+});
+
+router.beforeEach((to) => {
+  if (to.meta?.title) {
+    document.title = to.meta.title;
+  } else {
+    document.title = '月租整合系統';
+  }
 });
 
 export default router;
