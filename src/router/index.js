@@ -160,6 +160,14 @@ const router = createRouter({
       component: () => import("../views/lottery/LotteryQuery.vue"),
       meta: { title: "月租停車抽籤登記" },
     },
+
+    /* ── 中獎發票下載 ── */
+    {
+      path: "/invoice-download",
+      name: "InvoiceDownload",
+      component: () => import("../views/invoice/InvoiceDownload.vue"),
+      meta: { title: "中獎發票下載" },
+    },
   ],
 });
 
