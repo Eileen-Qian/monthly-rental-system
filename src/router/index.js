@@ -168,6 +168,32 @@ const router = createRouter({
       component: () => import("../views/invoice/InvoiceDownload.vue"),
       meta: { title: "中獎發票下載" },
     },
+
+    /* ── 月租登記 ── */
+    {
+      path: "/service/month/site",
+      name: "RegSearch",
+      component: () => import("../views/registration/RegSearch.vue"),
+      meta: { title: "月租登記" },
+    },
+    {
+      path: "/service/month/site/terms/:siteCode",
+      name: "RegTerms",
+      component: () => import("../views/registration/RegTerms.vue"),
+      meta: { title: "月租登記" },
+    },
+    {
+      path: "/service/month/site/form/:siteCode",
+      name: "RegForm",
+      component: () => import("../views/registration/RegForm.vue"),
+      meta: { title: "月租登記" },
+    },
+    {
+      path: "/service/month/site/success/:siteCode",
+      name: "RegSuccess",
+      component: () => import("../views/registration/RegSuccess.vue"),
+      meta: { title: "月租登記" },
+    },
   ],
 });
 

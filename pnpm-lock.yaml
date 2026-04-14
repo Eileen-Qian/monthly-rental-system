@@ -29,6 +29,9 @@ importers:
       pinia-plugin-persist:
         specifier: ^1.0.0
         version: 1.0.0(pinia@3.0.2(vue@3.5.13))(vue@3.5.13)
+      sweetalert2:
+        specifier: ^11.26.24
+        version: 11.26.24
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -900,6 +903,9 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
+  sweetalert2@11.26.24:
+    resolution: {integrity: sha512-SLgukW4wicewpW5VOukSXY5Z6DL/z7HCOK2ODSjmQPiSphCN8gJAmh9npoceXOtBRNoDN0xIz+zHYthtfiHmjg==}
+
   sync-child-process@1.0.2:
     resolution: {integrity: sha512-8lD+t2KrrScJ/7KXCSyfhT3/hRq78rC0wBFqNJXv3mZyn6hW2ypM05JmlSvtqRbeq6jqA94oHbxAr2vYsJ8vDA==}
     engines: {node: '>=16.0.0'}
@@ -1755,6 +1761,8 @@ snapshots:
   supports-color@8.1.1:
     dependencies:
       has-flag: 4.0.0
+
+  sweetalert2@11.26.24: {}
 
   sync-child-process@1.0.2:
     dependencies:

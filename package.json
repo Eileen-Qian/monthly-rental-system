@@ -16,6 +16,7 @@
     "jsbarcode": "^3.11.6",
     "pinia": "^3.0.2",
     "pinia-plugin-persist": "^1.0.0",
+    "sweetalert2": "^11.26.24",
     "vue": "^3.5.13",
     "vue-router": "4",
     "vue3-loading-overlay": "^0.0.0"
